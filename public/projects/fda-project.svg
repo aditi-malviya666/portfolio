@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fda_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#091e2b" />
+      <stop offset="50%" stop-color="#0f2b3c" />
+      <stop offset="100%" stop-color="#1b3f54" />
+    </linearGradient>
+    <linearGradient id="sun_glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.6" />
+    </linearGradient>
+    <linearGradient id="chart_grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer canvas -->
+  <rect width="600" height="340" rx="16" fill="url(#fda_bg)" />
+
+  <!-- Studio Frame -->
+  <rect x="25" y="20" width="550" height="300" rx="12" fill="#081822" stroke="#1e405a" stroke-width="1.5" />
+  
+  <!-- Window top bar -->
+  <rect x="25" y="20" width="550" height="32" rx="12" fill="#0c202d" />
+  <circle cx="45" cy="36" r="4" fill="#ef4444" />
+  <circle cx="58" cy="36" r="4" fill="#f59e0b" />
+  <circle cx="71" cy="36" r="4" fill="#10b981" />
+  <rect x="90" y="27" width="230" height="18" rx="9" fill="#06131c" stroke="#173549" stroke-width="1" />
+  <text x="104" y="39" fill="#7dd3fc" font-size="8.5" font-family="monospace">github.com/aditi-malviya666/FDA</text>
+  <text x="545" y="39" fill="#38bdf8" font-size="8.5" font-family="monospace" text-anchor="end">METEOROLOGICAL ANALYTICS</text>
+
+  <!-- Main Title Area -->
+  <text x="45" y="78" fill="#e0f2fe" font-size="14" font-family="sans-serif" font-weight="700">FDA • Weather Prediction &amp; Analytics</text>
+  <text x="45" y="96" fill="#7dd3fc" font-size="9.5" font-family="sans-serif">Fundamentals of Data Analysis • Feature Engineering &amp; ML Benchmarking</text>
+
+  <!-- Left Card: Weather Station Telemetry & Metrics -->
+  <rect x="45" y="112" width="245" height="188" rx="8" fill="#0c2230" stroke="#183b52" />
+  
+  <text x="60" y="132" fill="#38bdf8" font-size="10" font-family="sans-serif" font-weight="600">LIVE SENSOR TELEMETRY</text>
+  
+  <!-- Current temperature display -->
+  <circle cx="85" cy="168" r="24" fill="#081822" stroke="#38bdf8" stroke-width="1.5" />
+  <circle cx="85" cy="168" r="18" fill="url(#sun_glow)" />
+  <text x="85" y="172" fill="#78350f" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="middle">24°</text>
+
+  <text x="120" y="162" fill="#f8fafc" font-size="12" font-family="sans-serif" font-weight="bold">Temperature Trends</text>
+  <text x="120" y="176" fill="#94a3b8" font-size="8.5" font-family="monospace">Pressure: 1013.2 hPa • Dew 14°C</text>
+  <text x="120" y="188" fill="#38bdf8" font-size="8.5" font-family="monospace">Humidity: 68% • UV Index: 5.2</text>
+
+  <!-- Sensor metrics grid -->
+  <rect x="58" y="204" width="105" height="40" rx="6" fill="#071722" stroke="#16384e" />
+  <text x="68" y="220" fill="#94a3b8" font-size="7.5" font-family="sans-serif">WEATHER RECORDS</text>
+  <text x="68" y="236" fill="#38bdf8" font-size="11" font-family="monospace" font-weight="bold">100K+ Data</text>
+
+  <rect x="171" y="204" width="105" height="40" rx="6" fill="#071722" stroke="#16384e" />
+  <text x="181" y="220" fill="#94a3b8" font-size="7.5" font-family="sans-serif">XGBOOST ACCURACY</text>
+  <text x="181" y="236" fill="#34d399" font-size="11" font-family="monospace" font-weight="bold">94.8% Score</text>
+
+  <rect x="58" y="252" width="218" height="36" rx="6" fill="#08202d" stroke="#1a4561" />
+  <text x="70" y="268" fill="#7dd3fc" font-size="8" font-family="sans-serif" font-weight="600">SEVERITY FORECAST</text>
+  <text x="70" y="280" fill="#e2e8f0" font-size="8" font-family="monospace">Moderate Rainfall • Low Risk Probability</text>
+
+  <!-- Right Card: Machine Learning Forecasting Chart -->
+  <rect x="305" y="112" width="250" height="188" rx="8" fill="#0c2230" stroke="#183b52" />
+  <text x="320" y="132" fill="#38bdf8" font-size="10" font-family="sans-serif" font-weight="600">PREDICTIVE MODELING BENCHMARK</text>
+
+  <!-- Chart axes -->
+  <line x1="330" y1="230" x2="535" y2="230" stroke="#1e405a" stroke-width="1" />
+  <line x1="330" y1="150" x2="330" y2="230" stroke="#1e405a" stroke-width="1" />
+
+  <!-- Grid lines -->
+  <line x1="330" y1="170" x2="535" y2="170" stroke="#163246" stroke-width="0.8" stroke-dasharray="2 2" />
+  <line x1="330" y1="195" x2="535" y2="195" stroke="#163246" stroke-width="0.8" stroke-dasharray="2 2" />
+
+  <!-- Area under curve -->
+  <polygon points="330,220 355,205 385,210 415,180 445,190 475,160 505,175 535,155 535,230 330,230" fill="url(#chart_grad)" />
+
+  <!-- Forecast line graph -->
+  <polyline points="330,220 355,205 385,210 415,180 445,190 475,160 505,175 535,155" fill="none" stroke="#38bdf8" stroke-width="2.5" />
+  <circle cx="475" cy="160" r="3.5" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5" />
+  <circle cx="535" cy="155" r="3.5" fill="#34d399" stroke="#ffffff" stroke-width="1.5" />
+
+  <!-- Feature importance pills -->
+  <rect x="320" y="246" width="65" height="18" rx="4" fill="#071b26" stroke="#1d435d" />
+  <text x="326" y="258" fill="#93c5fd" font-size="7.5" font-family="monospace">Barometer</text>
+
+  <rect x="390" y="246" width="65" height="18" rx="4" fill="#071b26" stroke="#1d435d" />
+  <text x="396" y="258" fill="#93c5fd" font-size="7.5" font-family="monospace">Dew Point</text>
+
+  <rect x="460" y="246" width="80" height="18" rx="4" fill="#071b26" stroke="#1d435d" />
+  <text x="466" y="258" fill="#34d399" font-size="7.5" font-family="monospace">RandomForest</text>
+
+  <!-- Repo link -->
+  <rect x="320" y="270" width="220" height="20" rx="4" fill="#08283a" stroke="#255577" />
+  <text x="375" y="283" fill="#7dd3fc" font-size="8" font-family="monospace" font-weight="600">View Data Analysis Capstone ↗</text>
+</svg>
