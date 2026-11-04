@@ -191,16 +191,6 @@ export const App: React.FC = () => {
         {activeSection === 'contact' && (
           <div className="pt-16 animate-fadeIn">
             <Footer />
-            <PetFooter />
-            <div className="text-center pb-10 pt-2">
-              <button
-                onClick={() => navigateTo('about')}
-                className="px-5 py-2 rounded-full bg-white dark:bg-slate-900 border border-blush-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 text-xs font-semibold inline-flex items-center gap-1.5 shadow-xs hover:border-purple-400 transition-all cursor-pointer"
-              >
-                <ArrowUp className="w-3.5 h-3.5" />
-                <span>Back to Top</span>
-              </button>
-            </div>
           </div>
         )}
       </main>
