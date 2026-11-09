@@ -109,9 +109,9 @@ export const App: React.FC = () => {
             <ExperienceTimeline />
             <SectionEnd
               label="EXPERIENCE TIMELINE"
-              desc="Academic standing, CGPA 8.7, and competitive hackathon achievements."
-              nextLabel="View Education"
-              nextSection="education"
+              desc="Problem-solving milestones, GFG FoT Rank #1, and competitive DSA analytics."
+              nextLabel="Explore DSA"
+              nextSection="dsa"
               onNavigate={navigateTo}
             />
           </div>
@@ -122,10 +122,10 @@ export const App: React.FC = () => {
           <div className="pt-16 animate-fadeIn">
             <DsaSection />
             <SectionEnd
-              label="DSA"
-              desc="Explore GitHub activity, open-source work, and the wider engineering toolkit."
-              nextLabel="View GitHub"
-              nextSection="git-grid"
+              label="DSA & PROBLEM SOLVING"
+              desc="Academic standing, CGPA 8.7, and competitive hackathon achievements."
+              nextLabel="View Education"
+              nextSection="education"
               onNavigate={navigateTo}
             />
           </div>
@@ -145,7 +145,7 @@ export const App: React.FC = () => {
           </div>
         )}
 
-        {/* 5. CERTIFICATIONS */}
+        {/* 6. CERTIFICATIONS */}
         {activeSection === 'certifications' && (
           <div className="pt-16 animate-fadeIn">
             <CredentialsSection />
@@ -164,10 +164,10 @@ export const App: React.FC = () => {
           <div className="pt-16 animate-fadeIn">
             <GitGridSection darkMode={darkMode} />
             <SectionEnd
-              label="GITHUB"
-              desc="Have an engineering role or collaborative project inquiry? Let’s connect."
-              nextLabel="Contact Me"
-              nextSection="contact"
+              label="GITHUB & OPEN SOURCE"
+              desc="Explore design systems, frontend, backend APIs, and applied AI specializations."
+              nextLabel="View Skills"
+              nextSection="skills"
               onNavigate={navigateTo}
             />
           </div>
@@ -178,10 +178,10 @@ export const App: React.FC = () => {
           <div className="pt-16 animate-fadeIn">
             <SkillsSection />
             <SectionEnd
-              label="SKILLS"
-              desc="See how the toolkit connects across design, engineering, data, and AI."
-              nextLabel="View Git"
-              nextSection="git-grid"
+              label="SKILLS & SPECIALIZATIONS"
+              desc="Have an engineering role or collaborative project inquiry? Let’s connect."
+              nextLabel="Contact Me"
+              nextSection="contact"
               onNavigate={navigateTo}
             />
           </div>
