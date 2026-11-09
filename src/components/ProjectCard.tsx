@@ -54,6 +54,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenCaseStu
 
         {/* Category + Year badge overlay */}
         <div className="absolute top-2.5 left-2.5 flex items-center gap-1.5 z-10">
+          {project.isResearch && (
+            <span className="text-[9px] font-mono tracking-wide px-2 py-0.5 rounded-full bg-purple-700/85 backdrop-blur-sm text-purple-100 font-semibold border border-purple-400/40">
+              Research
+            </span>
+          )}
           <span className="text-[9px] font-mono tracking-wide px-2 py-0.5 rounded-full bg-black/70 backdrop-blur-sm text-white/95 font-medium border border-white/10">
             {project.stackCategory || project.category}
           </span>

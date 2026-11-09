@@ -10,8 +10,9 @@ export interface Project {
   name?: string;
   tagline: string;
   eyebrow?: string;
-  category: 'AI & Web' | 'Systems & Vision' | 'UX & Open Source' | 'Web' | 'Mobile' | 'AI & ML' | 'Systems';
-  stackCategory?: 'Web' | 'Mobile' | 'AI & ML' | 'Systems';
+  category: 'AI & Web' | 'Systems & Vision' | 'UX & Open Source' | 'Web' | 'Mobile' | 'AI & ML' | 'Systems' | 'Research';
+  stackCategory?: 'Web' | 'Mobile' | 'AI & ML' | 'Systems' | 'Research';
+  isResearch?: boolean;
   featured: boolean;
   year: string;
   role: string;
