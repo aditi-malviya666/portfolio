@@ -175,10 +175,15 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenCaseStu
               target="_blank"
               rel="noreferrer"
               onClick={() => sound.click()}
-              className="w-11 h-10 rounded-xl border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 hover:bg-purple-50 dark:hover:bg-purple-950/60 hover:border-purple-500 hover:scale-105 active:scale-95 transition-all shadow-xs flex items-center justify-center shrink-0"
-              title="Open Live Demo"
+              className={`h-10 rounded-xl border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 hover:bg-purple-50 dark:hover:bg-purple-950/60 hover:border-purple-500 hover:scale-105 active:scale-95 transition-all shadow-xs flex items-center justify-center shrink-0 ${
+                project.links.live.includes('play.google') ? 'px-3 gap-1.5' : 'w-11'
+              }`}
+              title={project.links.live.includes('play.google') ? 'View on Google Play' : 'Open Live Demo'}
             >
-              <ExternalLink className="w-5 h-5 text-purple-600 dark:text-purple-400" />
+              <ExternalLink className="w-4 h-4 text-purple-600 dark:text-purple-400" />
+              {project.links.live.includes('play.google') && (
+                <span className="text-[11px] font-semibold text-slate-800 dark:text-slate-200">Play Store</span>
+              )}
             </a>
           )}
         </div>

@@ -62,6 +62,8 @@ export interface Experience {
   description: string;
   achievements: string[];
   skills: string[];
+  link?: string;
+  linkLabel?: string;
 }
 
 export interface SkillCategory {

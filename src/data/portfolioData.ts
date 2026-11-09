@@ -694,7 +694,9 @@ export const EXPERIENCES: Experience[] = [
     period: "Mar 2026 – May 2026",
     location: "Remote",
     type: "Internship",
-    description: "Shipped core user-facing mobile features for an edtech platform with over 500,000 active learners, focusing on interaction design, authentication resilience, and AI mascot companionship.",
+    link: "https://play.google.com/store/apps/details?id=com.studifysuccess.courses",
+    linkLabel: "Google Play App (500K+ Learners)",
+    description: "Shipped core user-facing mobile features for the StudifySuccess app serving 500,000+ active learners on Google Play, focusing on interaction design, authentication resilience, and AI mascot companionship.",
     achievements: [
       "Architected 9+ core features: Study Planner, AI Companion Mascot, and Test Generator.",
       "Rebuilt quiz grading engine to 100% precision; resolved auth crash loops, cutting session drops by ~40%.",
