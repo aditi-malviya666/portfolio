@@ -123,27 +123,25 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ darkMode, onNavigate
                   <dt className="text-sm text-slate-600 dark:text-slate-400">University CGPA</dt>
                   <dd className="text-lg font-bold font-mono text-slate-900 dark:text-white">8.7</dd>
                 </div>
-                <div className="flex items-baseline justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-3">
-                  <dt className="text-sm text-slate-600 dark:text-slate-400">
-                    <span className="font-medium text-slate-800 dark:text-slate-200">StudifySuccess App</span>
-                    <span className="block text-[11px] text-purple-600 dark:text-purple-400 font-normal">Active learners on Google Play</span>
-                  </dt>
-                  <dd className="text-lg font-bold font-mono text-slate-900 dark:text-white">500K+</dd>
+                <div className="pt-0.5">
+                  <div className="flex items-baseline justify-between gap-4">
+                    <dt className="text-sm text-slate-600 dark:text-slate-400">StudifySuccess active learners</dt>
+                    <dd className="text-lg font-bold font-mono text-slate-900 dark:text-white">500K+</dd>
+                  </div>
+                  <div className="mt-2.5">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.studifysuccess.courses"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => sound.click()}
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-purple-600 hover:bg-purple-500 text-white text-xs font-semibold shadow-xs transition-transform hover:scale-105 active:scale-95"
+                    >
+                      <span>View on Google Play</span>
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
                 </div>
               </dl>
-
-              <div className="mt-5">
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.studifysuccess.courses"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => sound.click()}
-                  className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-purple-600 hover:bg-purple-500 text-white text-xs font-semibold shadow-xs transition-transform hover:scale-105 active:scale-95"
-                >
-                  <span>View on Google Play</span>
-                  <ExternalLink className="w-3.5 h-3.5" />
-                </a>
-              </div>
             </div>
           </div>
         </div>
