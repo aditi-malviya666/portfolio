@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 import { sound } from '../utils/sound';
-import { Github, Linkedin, Mail, ArrowDown, MapPin, Sparkles, ExternalLink } from 'lucide-react';
+import { Github, Linkedin, Mail, MapPin, Sparkles, ExternalLink } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
 interface AboutSectionProps {
@@ -99,19 +99,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ darkMode, onNavigate
               </button>
             </div>
 
-            {/* Navigate to Projects Button: Dull / Dark Shade in Light Mode */}
-            <div className="pt-1">
-              <button
-                onClick={() => {
-                  sound.click();
-                  onNavigate?.('projects');
-                }}
-                className="inline-flex items-center gap-2.5 px-6 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white dark:bg-gradient-to-r dark:from-purple-600 dark:to-pink-500 dark:hover:from-purple-500 dark:hover:to-pink-400 text-xs font-semibold transition-all shadow-md active:scale-95 hover:scale-105 cursor-pointer"
-              >
-                <span>Explore Projects</span>
-                <ArrowDown className="w-3.5 h-3.5" />
-              </button>
-            </div>
+
           </div>
 
           {/* Right Column: one quiet proof card instead of a dashboard */}
