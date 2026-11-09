@@ -125,7 +125,10 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ darkMode, onNavigate
                 </div>
                 <div className="pt-0.5">
                   <div className="flex items-baseline justify-between gap-4">
-                    <dt className="text-sm text-slate-600 dark:text-slate-400">StudifySuccess active learners</dt>
+                    <dt className="text-sm text-slate-600 dark:text-slate-400">
+                      <div>StudifySuccess App</div>
+                      <div className="text-xs text-slate-600 dark:text-slate-400 mt-0.5">Active learners</div>
+                    </dt>
                     <dd className="text-lg font-bold font-mono text-slate-900 dark:text-white">500K+</dd>
                   </div>
                   <div className="mt-2.5">
